@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Book a Room</title>
+    <link rel="stylesheet" href="/webjars/bootstrap/5.3.3/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+<div class="container mt-5">
+    <h2 class="text-center text-primary mb-4">Book a Room</h2>
+    <form th:action="@{/bookings}" method="post" class="mx-auto" style="max-width: 400px;">
+        <div class="mb-3">
+            <label class="form-label">Room ID</label>
+            <input type="text" name="roomId" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Check-in Date</label>
+            <input type="date" name="checkIn" class="form-control" required>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Check-out Date</label>
+            <input type="date" name="checkOut" class="form-control" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Book Now</button>
+    </form>
+</div>
+</body>
+</html>
