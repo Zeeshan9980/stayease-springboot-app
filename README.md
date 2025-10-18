@@ -35,6 +35,7 @@ Containerization : Docker
 ⚙️ Setup Instructions
 1️⃣ Clone the repository
 git clone https://github.com/Zeeshan9980/stayease-springboot-app.git
+
 cd stayease-springboot-app
 
 2️⃣ Configure the database
