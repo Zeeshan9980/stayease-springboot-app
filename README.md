@@ -50,7 +50,9 @@ spring.datasource.password=your_password
 spring.jpa.hibernate.ddl-auto=update
 
 3️⃣ Build and run the project
+
 mvn clean install
+
 mvn spring-boot:run
 
 4️⃣ Access the app
