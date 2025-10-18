@@ -60,3 +60,35 @@ mvn spring-boot:run
 
 Open your browser or Postman:
 👉 http://localhost:8081
+
+🧭 Project Structure
+
+com.stayease.bookingapp
+ ├── advice
+ ├── config
+ ├── controller
+ ├── dto
+ ├── entity
+ ├── exception
+ ├── repository
+ ├── security
+ ├── service
+ ├── strategy
+ ├── util
+ └── StayEaseApplication.java
+
+ 🧪 API Testing
+
+All endpoints can be tested using Postman.
+You can import the included Postman collection or manually test endpoints such as:
+
+POST /api/users/register
+
+POST /api/users/login
+
+GET /api/hotels
+
+POST /api/bookings
+
+DELETE /api/bookings/{id}
+
