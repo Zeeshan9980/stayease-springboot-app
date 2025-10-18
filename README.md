@@ -30,7 +30,7 @@ API Testing: Postman
 
 Version Control: Git & GitHub
 
-Containerization (optional): Docker
+Containerization : Docker
 
 ⚙️ Setup Instructions
 1️⃣ Clone the repository
@@ -42,8 +42,11 @@ cd stayease-springboot-app
 Edit your src/main/resources/application.properties file:
 
 spring.datasource.url=jdbc:mysql://localhost:3306/stayease
+
 spring.datasource.username=root
+
 spring.datasource.password=your_password
+
 spring.jpa.hibernate.ddl-auto=update
 
 3️⃣ Build and run the project
