@@ -17,14 +17,12 @@ Ensure data integrity, secure access, and scalable architecture using Spring Boo
 Enable Docker-based deployment for CI/CD readiness.
 
 🧠 System Overview
+
 [ Client Application / Frontend ]
             │
             ▼
-            
      [ RESTful API Layer ]
-     
             │
-            
             ▼
 ┌────────────────────────────────────────┐
 │   Authentication & Authorization       │
@@ -32,11 +30,10 @@ Enable Docker-based deployment for CI/CD readiness.
 │   Hotel Management                     │
 │   User Profile Management              │
 └────────────────────────────────────────┘
-
             │
-            
             ▼
      [ MySQL Database Layer ]
+
 
 🚀 Key Features
 
