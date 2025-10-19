@@ -15,31 +15,27 @@ The system is production-ready, easily deployable with Docker, and follows enter
 
 ✅ Provide containerized deployment for CI/CD readiness.
 
-
 🧠 System Overview
-┌────────────────────────────────────────────┐
-│                Client (Frontend)           │
-└────────────────────────────────────────────┘
-                      │
-                      ▼
-┌────────────────────────────────────────────┐
-│           RESTful API Gateway Layer        │
-└────────────────────────────────────────────┘
-                      │
-                      ▼
-┌────────────────────────────────────────────┐
-│           Backend Microservices            │
-│--------------------------------------------│
-│ • Authentication & Authorization Service   │
-│ • Booking Management Service               │
-│ • Hotel Management Service                 │
-│ • User Profile Management Service          │
-└────────────────────────────────────────────┘
-                      │
-                      ▼
-┌────────────────────────────────────────────┐
-│             MySQL Database Layer           │
-└────────────────────────────────────────────┘
+
+Client Application / Frontend
+→ Handles user interactions and communicates with the backend via RESTful APIs.
+
+RESTful API Layer
+→ Acts as the gateway between the frontend and backend microservices, ensuring secure and efficient request routing.
+
+Backend Microservices
+
+Authentication & Authorization Service – Manages user login, registration, and secure access control.
+
+Booking Management Service – Handles booking creation, updates, and tracking.
+
+Hotel Management Service – Manages hotel details, availability, and inventory.
+
+User Profile Management Service – Handles user information, preferences, and profile updates.
+
+Database Layer (MySQL)
+→ Stores structured data for users, bookings, and hotels with relationships optimized for scalability and consistency.
+
 
 
 
