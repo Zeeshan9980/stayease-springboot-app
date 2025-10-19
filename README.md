@@ -18,7 +18,6 @@ Enable Docker-based deployment for CI/CD readiness.
 
 🧠 System Overview
 [ Client Application / Frontend ]
-
             │
             ▼
             
