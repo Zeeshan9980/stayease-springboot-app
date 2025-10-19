@@ -18,10 +18,14 @@ Enable Docker-based deployment for CI/CD readiness.
 
 🧠 System Overview
 [ Client Application / Frontend ]
+
             │
             ▼
+            
      [ RESTful API Layer ]
+     
             │
+            
             ▼
 ┌────────────────────────────────────────┐
 │   Authentication & Authorization       │
@@ -29,7 +33,9 @@ Enable Docker-based deployment for CI/CD readiness.
 │   Hotel Management                     │
 │   User Profile Management              │
 └────────────────────────────────────────┘
+
             │
+            
             ▼
      [ MySQL Database Layer ]
 
@@ -51,6 +57,7 @@ Enable Docker-based deployment for CI/CD readiness.
 
 🧩 Technology Stack
 Category	Technologies Used
+
 Backend Framework	Spring Boot (v3+)
 Language	Java 21
 Database	MySQL
@@ -62,6 +69,7 @@ Containerization	Docker
 ⚙️ Setup & Installation
 1️⃣ Clone the Repository
 git clone https://github.com/Zeeshan9980/stayease-springboot-app.git
+
 cd stayease-springboot-app
 
 2️⃣ Configure the Database
@@ -75,6 +83,7 @@ spring.jpa.hibernate.ddl-auto=update
 spring.jpa.show-sql=true
 
 3️⃣ Build & Run the Application
+
 mvn clean install
 mvn spring-boot:run
 
