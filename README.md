@@ -1,20 +1,19 @@
-🏨 StayEase — Enterprise Hotel Booking Backend System
 📄 Project Summary
 
-StayEase is a hotel booking management backend system developed using Spring Boot.
-It provides a complete RESTful API solution for managing hotels, customers, and bookings — enabling seamless hotel search, reservation, and cancellation.
+StayEase is a hotel booking management backend built using Spring Boot.
+It provides RESTful APIs for managing hotels, users, and bookings — designed with clean architecture, modular services, and secure access.
 
-The system is designed with a layered architecture, secure authentication, and containerized deployment, making it ready for enterprise-level scalability and integration.
+The system is production-ready, easily deployable with Docker, and follows enterprise backend standards for scalability and maintainability.
 
-🎯 Objectives
+🎯 Project Objectives
 
-Build a robust and modular hotel booking backend for real-world business use.
+✅ Build a robust, modular backend system for hotel booking platforms.
 
-Support core operations such as user registration, booking management, and hotel listings.
+✅ Support core business features like registration, booking, and cancellation.
 
-Ensure data integrity, secure access, and scalable architecture using Spring Boot and MySQL.
+✅ Ensure data integrity, security, and performance with Spring Boot & MySQL.
 
-Enable Docker-based deployment for CI/CD readiness.
+✅ Provide containerized deployment for CI/CD readiness.
 
 🧠 System Overview
 
@@ -25,53 +24,50 @@ Enable Docker-based deployment for CI/CD readiness.
             │
             ▼
 ┌────────────────────────────────────────┐
-│   Authentication & Authorization       │
-│   Booking Management                   │
-│   Hotel Management                     │
-│   User Profile Management              │
+│  Authentication & Authorization        │
+│  Booking Management                    │
+│  Hotel Management                      │
+│  User Profile Management               │
 └────────────────────────────────────────┘
             │
             ▼
      [ MySQL Database Layer ]
 
-
 🚀 Key Features
 
-👤 User Management: Registration, login, and authentication.
+👤 User Management: Register, login, and secure authentication.
 
-🏨 Hotel Management: Create and view hotels with detailed information.
+🏨 Hotel Management: Add, view, and manage hotel information.
 
 📅 Booking Management: Create, view, and cancel bookings.
 
-🌐 RESTful Architecture: Consistent and stateless APIs.
+🌐 RESTful APIs: Follows REST standards with clear endpoints.
 
-🧱 Layered Structure: (Controller → Service → Repository).
+🧱 Layered Architecture: Controller → Service → Repository.
 
-🐳 Containerization: Deployable via Docker.
-
-🧰 Integrated Tools: Postman for API testing, Maven for build automation.
+🐳 Docker Integration: Seamless containerized deployment.
 
 🧩 Technology Stack
-Category	Technologies Used
 
-Backend Framework	Spring Boot (v3+)
+Category	Technologies
+Framework	Spring Boot (v3+)
 Language	Java 21
 Database	MySQL
-Security	Spring Security + JWT (optional setup)
+Security	Spring Security + JWT (planned)
 Build Tool	Maven
 API Testing	Postman
 Version Control	Git & GitHub
 Containerization	Docker
+
 ⚙️ Setup & Installation
 1️⃣ Clone the Repository
 git clone https://github.com/Zeeshan9980/stayease-springboot-app.git
-
 cd stayease-springboot-app
 
 2️⃣ Configure the Database
 
-Edit src/main/resources/application.properties:
-
+Edit the application.properties file in:
+src/main/resources/application.properties
 spring.datasource.url=jdbc:mysql://localhost:3306/stayease
 spring.datasource.username=root
 spring.datasource.password=your_password
@@ -85,66 +81,41 @@ mvn spring-boot:run
 
 4️⃣ Access the Application
 
-Once started, access the API at:
+Open in browser or Postman:
 👉 http://localhost:8081
 
 🧭 Project Structure
+
 com.stayease.bookingapp
 │
 ├── advice              → Global exception handling
 ├── config              → Application configurations
 ├── controller          → REST API controllers
 ├── dto                 → Data Transfer Objects
-├── entity              → JPA entities
+├── entity              → Database entities
 ├── exception           → Custom exception classes
 ├── repository          → Data access layer
-├── security            → JWT & authentication logic
+├── security            → JWT & Authentication logic
 ├── service             → Business logic layer
-├── strategy            → Booking strategies (if any)
+├── strategy            → Booking strategies
 ├── util                → Utility classes
 └── StayEaseApplication.java → Main entry point
 
-🧪 API Testing (via Postman)
+🧪 API Testing (Postman Ready)
 
-You can test all endpoints using Postman.
-Below are a few key APIs:
+| Action         | Endpoint              | Method |
+| -------------- | --------------------- | ------ |
+| Register User  | `/api/users/register` | POST   |
+| Login          | `/api/users/login`    | POST   |
+| View Hotels    | `/api/hotels`         | GET    |
+| Create Booking | `/api/bookings`       | POST   |
+| Cancel Booking | `/api/bookings/{id}`  | DELETE |
 
-Action	Endpoint	Method
-Register a user	/api/users/register	POST
-Login	/api/users/login	POST
-View hotels	/api/hotels	GET
-Create booking	/api/bookings	POST
-Cancel booking	/api/bookings/{id}	DELETE
-🐳 Docker Setup (Optional Deployment)
-1️⃣ Build Docker Image
+🐳 Docker Deployment
+🧱 Build Docker Image
 docker build -t stayease-app .
 
-2️⃣ Run Container
+🚀 Run Container
 docker run -p 8081:8081 stayease-app
-
-3️⃣ Verify
-
-Open: http://localhost:8081
-
-🔐 Security Highlights
-
-Modular authentication with JWT (planned for v2 release).
-
-Password encryption using BCryptPasswordEncoder.
-
-Secure REST endpoints using Spring Security configuration.
-
-🧾 Deployment Ready For
-Environment	Tools
-Development	Local MySQL + Maven
-Staging	Docker
-Production	Cloud deployment (AWS / GCP / Azure)
-📊 Future Enhancements
-
-🏷️ Integration with third-party hotel APIs.
-
-💬 Email notifications for booking confirmation.
-
-🌍 Multi-user role support (Admin, Customer, Manager).
-
-📈 Reporting & analytics dashboards.
+Then visit:
+👉 http://localhost:8081
