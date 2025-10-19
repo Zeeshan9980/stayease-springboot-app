@@ -62,6 +62,7 @@ Containerization	Docker
 ⚙️ Setup & Installation
 1️⃣ Clone the Repository
 git clone https://github.com/Zeeshan9980/stayease-springboot-app.git
+
 cd stayease-springboot-app
 
 2️⃣ Configure the Database
@@ -77,6 +78,7 @@ spring.jpa.show-sql=true
 3️⃣ Build & Run the Application
 
 mvn clean install
+
 mvn spring-boot:run
 
 4️⃣ Access the Application
@@ -113,9 +115,12 @@ com.stayease.bookingapp
 
 🐳 Docker Deployment
 🧱 Build Docker Image
+
 docker build -t stayease-app .
 
 🚀 Run Container
+
 docker run -p 8081:8081 stayease-app
+
 Then visit:
 👉 http://localhost:8081
